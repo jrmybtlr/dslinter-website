@@ -16,11 +16,40 @@
     />
   </head>
   <body class="h-dvh bg-black">
-    <main class="h-full w-full flex items-center justify-center">
+    <main class="relative h-full w-full flex items-center justify-center overflow-hidden">
       <div
-        class="pointer-events-none absolute inset-0 grid-fade"
+        class="pointer-events-none absolute inset-0 iso-grid-fade"
         aria-hidden="true"
-      ></div>
+      >
+        <svg
+          class="h-full w-full"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid slice"
+        >
+          <defs>
+            <pattern
+              id="iso-grid"
+              width="69.28"
+              height="40"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M -34.64 40 L 34.64 0 M 0 40 L 69.28 0 M 34.64 40 L 104.28 0"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+              <path
+                d="M -34.64 0 L 34.64 40 M 0 0 L 69.28 40 M 34.64 0 L 104.28 40"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#iso-grid)" />
+        </svg>
+      </div>
 
       <div class="relative mx-auto max-w-6xl px-6 py-20 lg:px-8 -mt-12">
         <div class="mx-auto max-w-3xl text-center w-full">
@@ -161,7 +190,7 @@
           >
             <a
               href="https://github.com/jrmybtlr/DSLinter"
-              class="inline-flex w-full items-center justify-center border border-surface-border px-4 py-2.5 text-sm font-medium text-zinc-300 transition-colors hover:border-zinc-700 hover:text-zinc-100 sm:w-auto"
+              class="inline-flex w-full items-center justify-center border border-zinc-700 bg-black px-4 py-2.5 text-sm font-medium text-zinc-300 transition-colors hover:border-zinc-700 hover:text-zinc-100 sm:w-auto"
               target="_blank"
               rel="noreferrer"
             >
