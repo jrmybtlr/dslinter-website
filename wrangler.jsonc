@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "dslinter-website",
+  "name": "dslinter",
   "main": "./src/worker.ts",
   "assets": {
     "directory": "./dist"
